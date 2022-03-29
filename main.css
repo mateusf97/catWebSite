@@ -1,7 +1,7 @@
 :root {
   --ref-font-color: #fff;
   --ref-height-element: 60px;
-  --ref-font-size: 20px;
+  --ref-font-size: 30px;
   --ref-font-color: #fff;
   --ref-label-background-color: #1b1b1bdb;
   --ref-custom-padding: 20px;
@@ -70,6 +70,7 @@ body,
   width: 100%;
   text-align: center;
   background: rgba(0,0,0, 0.28);
+  font-size: var(--ref-font-size);
 }
 
 .home-text p{
