@@ -1,0 +1,87 @@
+:root {
+  --ref-font-color: #fff;
+  --ref-height-element: 60px;
+  --ref-font-size: 20px;
+  --ref-font-color: #fff;
+  --ref-label-background-color: #1b1b1bdb;
+  --ref-custom-padding: 20px;
+}
+
+@font-face {
+  font-family: Tesla;
+  src: url("styles/Tesla.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Tesla;
+  font-weight: bold;
+  src: url("styles/TeslaBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TeslaBold;
+  src: url("styles/Tesla2.otf") format("opentype");
+}
+
+html,
+body,
+.body {
+  font-family: "Tesla";
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+.body {
+  /* background-image: url("https://thatcopy.github.io/catAPI/imgs/jpg/96aff96.jpg"); */
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.body .home-title,
+.body .home-text,
+.body .home-button-container {
+  background: var(--ref-label-background-color);
+  color: var(--ref-font-color);
+  display: inline-block;
+  font-size: var(--ref-font-size);
+  height: var(--ref-height-element);
+  letter-spacing: 2;
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  user-select: none;
+}
+
+.cache-background {
+  visibility: hidden;
+  height: 0px;
+  width: 1px;
+}
+
+.home-text{
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: fixed;
+  color: white;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0, 0.28);
+}
+
+.home-text p{
+  mix-blend-mode: exclusion;
+
+}
+
+.image-body {
+  height: 100vh;
+  width: 100vw;
+  background: #2f4f4fb8;
+  background: url('https://cdn2.thecatapi.com/images/Tbc8_VStM.jpg');
+  background-size: cover !important;
+  max-width: 100%;
+}
